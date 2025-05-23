@@ -1,8 +1,8 @@
 #!/bin/bash
 
-read -p "Nom du fichier : " fichier
+read -p "Nom du fichier : " nom
 
-if [ -f "$fichier" ]; then
+if [ -f  ${nom} ]; then
   echo "Le fichier existe."
 else
   echo "Le fichier n'existe pas."
