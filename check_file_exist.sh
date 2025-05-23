@@ -2,9 +2,10 @@
 
 read -p "Nom du fichier : " nom
 
-if [ -f  ${nom} ]; then
-  echo "Le fichier existe."
+
+if [ ! -f "$nom" ]; then
+  echo "File does not exist."
 else
-  echo "Le fichier n'existe pas."
+  echo "File exists."
 fi
 
